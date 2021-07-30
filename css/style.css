@@ -1,0 +1,111 @@
+
+:root {
+    --nav-background: black;
+    --nav-text:#e3dac9;
+    --primary:#e3dac9;
+}
+body{
+    background-color: var(--primary);
+}
+.main-header{
+    height:7rem;
+    margin-bottom: 1rem;
+}
+
+
+.main-container{
+    display: flex;
+    width: 90%;
+    margin:auto auto;
+}
+
+.form{
+    flex:2;
+    width:39%;
+ 
+}
+.listDisplay{
+    flex:3;
+    width: 60%;
+    margin-left:20px;
+}
+.listTitle{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.selectFlex{
+    display: flex;
+}
+#otherCategory{
+    margin-left: 7px;
+    flex-grow:2;
+}
+#icon-important{
+    font-size: 24px;
+    cursor: pointer;
+}
+#icon-important.fa-times{
+    color:grey;
+}
+#icon-important.fa-exclamation{
+    color:red;
+}
+.control{
+    padding: 4px 2px;
+}
+
+/* 
+* 
+*   Styles for Task List Display
+*
+*
+*/
+
+.task-box{
+    display: flex;
+    border: 1px solid black;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.task-leftside{
+    display: flex;
+    border: 1px solid black;
+    flex-basis: 60%;
+    padding: 5px;
+    background-color: var(--primary);
+}
+.left-text{
+    padding-left:4px;
+}
+.left-text h3{
+    font-weight: bold;
+}
+#iconBox{
+    display: flex;
+    flex-basis: 10%;
+    align-self: center;
+    justify-content: center;
+    font-size: 32px;
+}
+.task-rightside{
+display: flex;
+flex-basis: 40%;
+flex-direction: column;
+padding: 5px;
+border: 1px solid black;
+background-color: var(--primary);
+
+}
+.task-info{
+    flex-basis: 80%;
+
+}
+.deleteBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}

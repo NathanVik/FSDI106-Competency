@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Task Manager</title>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand fs-2">A Simple Pending To-do List</a>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+    </header>
+
+<div class="main-container">
+    
+
+    <div class="form" id="inputForm">
+
+        <div class="control">
+            <label class="form-label">Task Title</label>
+            <input type="text" id="txtTitle" placeholder="Title" class="form-control">
+        </div>
+        <div class="control">
+            <label class="form-label">High Importance?</label>
+            <i id="icon-important" class="fa-times fas red"></i>
+        </div>
+        <div class="control">
+            <label class="form-label">Description</label>
+            <textarea id="txtDescription" placeholder="Description" class="form-control"></textarea>
+        </div>
+        <div class="control">
+            <label class="form-label">Due Date</label>
+            <input type="date" id="selDuedate" class="form-control">
+        </div>
+        <div class="control">
+            <label class="form-label">Category</label>
+            <div class="selectFlex">
+
+                <select id="selCategory" class="form-select">
+                    <option value="" disabled selected>---Select an Option---</option>
+                    <option value="Work">Work</option>
+                    <option value="Hobbies">Hobbies</option>
+                    <option value="Family">Family</option>
+                    <option value="Chores">Chores</option>
+                    <option value="5">Other</option>
+                </select>
+                <input type="text" id="otherCategory" class="form-control" placeholder="Input your own category">
+            </div>
+        </div>
+        <div class="control">
+            <label class="form-label">Location</label>
+            <input type="text" id="txtLocation"  placeholder="Location" class="form-control">
+        </div>
+        <div class="control">
+            <label class="form-label">Task Color Code</label>
+            <input id="selColor" type="color" class="form-control">
+        </div>
+        <div class="control">
+            <button id="btn-saveTask" class="btn btn-dark">Add Task</button>
+        </div>
+    </div>
+
+    <div class="listDisplay">
+        <div class="listTitle">
+            <h3>Pending Tasks</h3>
+            <button id="btn-toggle" class="btn btn-dark">Show/Hide Input Form</button>
+        </div>
+        <div id="pendingTasks">
+            
+        </div>
+        <h3>Completed Tasks</h3>
+        <div id="doneTasks"></div>
+    </div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../scripts/task.js"></script>
+    <script src="../scripts/app.js"></script>
+
+</body>
+</html>
+
+
+
+<!-- 
+
+id
+title
+description
+duedate
+category
+color
+location
+
+create button
+catch click
+call function
+
+ -->
